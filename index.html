@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel-place-website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex justify-around items-center bg-blue-400 text-white">
+        <div class="flex justify-around items-center h-20 gap-3">
+            <p id="card-count" class="pb-9 font-extrabold text-3xl text-red-800">0</p>
+            <img class="h-10" src="Images/card icon.png" alt="">
+             <div class="flex justify-center items-center">
+                <p class="font-bold">Home</p>
+             </div>
+           
+        </div>
+        <div>
+            <p class="font-bold">Setting</p>
+        </div>
+    </header>
+  
+    <section  >
+        <div class="flex mt-10 justify-around items-center">
+            <div class="flex flex-col justify-center items-center gap-4">
+                <p class="text-9xl">Lets Travel</p>
+                <p class="text-center text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Eaque minima cumque beatae tenetur deserunt, atque illum!</p>
+                <p class="text-4xl font-extrabold">Total Budget :<span id="budget"> 900$</span></p>
+            </div>
+            <div>
+                <img class="h-[700px]" src="Images/file.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+
+            <!-- shoppingCard -->
+<section>
+<div class="flex justify-around items-center" >
+
+<div class="">
+    <div class="flex gap-6 ">
+        <div class="mb-5">
+            <div class="card card-side bg-base-100 shadow-2xl shadow-gray-900">
+                <figure><img class="h-32 rounded-xl" src="Images/Images-01.jpg" alt="Movie"/></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-4xl font-extrabold">Shajek</h2>
+                  <p class="text-2xl font-bold">Cost : <span>300</span>$</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary add-btn">Add to Card</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="card card-side bg-base-100 shadow-2xl shadow-gray-900 ">
+                <figure><img class="h-32 rounded-xl" src="Images/Images-02.jpg" alt="Movie"/></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-4xl font-extrabold">Dhaka</h2>
+                  <p class="text-2xl font-bold">Cost : <span>300$</span></p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary add-btn">Add to Card</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+     </div>
+    
+     <div class="flex gap-6">
+        <div class="card card-side bg-base-100 shadow-2xl shadow-gray-900">
+            <figure><img class="h-32 rounded-xl" src="Images/Images-03.jpg" alt="Movie"/></figure>
+            <div class="card-body">
+              <h2 class="card-title text-4xl font-extrabold">Khulna</h2>
+              <p class=" text-2xl font-bold">Cost : <span>500$</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary  add-btn">Add to Card</button>
+              </div>
+            </div>
+          </div>
+        <div class="card card-side bg-base-100 shadow-2xl shadow-gray-900">
+            <figure><img class="h-32 rounded-xl" src="Images/Images-04.jpg" alt="Movie"/></figure>
+            <div class="card-body">
+              <h2 class="card-title text-4xl font-extrabold">Cox Baz</h2>
+              <p class="text-2xl font-bold">Cost : <span>300$</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary  add-btn">Add to Card</button>
+              </div>
+            </div>
+          </div>
+     </div>
+</div>
+
+
+   <div class="space-y-6 bg-slate-100 shadow-2xl shadow-gray-900 p-4 rounded-lg">
+    <p class="text-4xl font-bold">Card</p>
+    <div class="flex gap-3" id="selected-place-container"></div>
+    <p class="text-2xl font-bold">Total cost : <span id="total-cost">0 </span>$</p>
+    <div class="flex gap-4">
+    <button onclick="addGrandTotal('bus')" class="btn btn-active text-xl font-semibold">Bus <span>+100</span></button>
+    <button onclick="addGrandTotal('train')" class="btn btn-active text-xl font-semibold">Train  <span>-100</span></button>
+    <button onclick="addGrandTotal('flight')" class="btn btn-active text-xl font-semibold">Flight  <span>+500</span></button>
+    </div>
+    <p class="text-2xl font-bold">Grand Total : <span id="grand-total">0</span>$</p>
+   </div>
+
+
+</div>
+</section>
+</body>
+<script src="js/test.js"></script>
+</html>
